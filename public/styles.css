@@ -1,0 +1,304 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgba(255, 253, 140, 0.616);
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/**Contenedro**/
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/**Utilidades **/
+
+.centrar-texto {
+    text-align: center 90 rm;
+}
+
+.no-margin {
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 800;
+    text-size-adjust: center;
+}
+
+.lit {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    background-color: rgba(67, 166, 231, 0.623);
+}
+
+
+/**Datos **/
+
+.centrar-texto {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+/**COLUMNAS TEXTO **/
+
+@media(min-width:768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .columnas-1 {
+        flex: 0 0 calc(50% - 3rem);
+    }
+    .columnas-2 {
+        flex: 0 0 calc(33.3% - 2rem);
+    }
+    .columnas-3 {
+        flex: 0 0 calc(66.6% - 2rem);
+    }
+    /**Botone**/
+    .boton {
+        display: block;
+        text-align: center;
+        padding: 1rem 3rem;
+        margin-top: 2rem 0;
+        color: white;
+        text-decoration: r;
+        font-family: 'Julius Sans One', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2rem;
+        flex: 0 0 100%;
+        border-color: transparent;
+    }
+}
+
+.boton-retorno {
+    background-color: blue;
+}
+
+@media(min-width:768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+
+/**Header **/
+
+@media (min-width:768px) {
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.site-header {
+ 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 50rem;
+}
+
+.site-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.site-header span {
+    font-weight: 700
+}
+
+
+/**Navegacion**/
+
+.navegacion a {
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media(min-width:768px) {
+    .navegacion a {
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+}
+
+
+/** formato datos **/
+
+.alin p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.alin p span,
+.alin .descripcion {
+    font-weight: 400;
+}
+
+
+/**Imgen escuelas  **/
+
+.imagen-1 {
+    background-image: url('../img/Pri.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 120rem;
+    height: 20rem;
+    display: flex;
+    align-items: left;
+}
+
+.imagen-2 {
+    background-image: url('../img/111.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 120rem;
+    height: 20rem;
+    display: flex;
+    align-items: left;
+}
+
+.contenido-imagen-2 {
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.imagen-4 {
+    background-image: url('../img/cobaq10.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 120rem;
+    height: 20rem;
+    display: flex;
+    align-items: left;
+}
+
+.imagen-5 {
+    background-image: url('../img/1-2.png');
+    background-position: center center;
+    background-size: cover;
+    width: 120rem;
+    height: 20rem;
+    display: flex;
+    align-items: left;
+}
+
+.contenido-imagen {
+    color: white;
+}
+
+.contenido-imagen p {
+    font-size: 1.8rem;
+}
+
+
+/**Footer **/
+
+.site-footer {
+    background-color: black;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.site-footer p {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.site-footer p span {
+    font-weight: 300;
+}
+
+.seccion-inferior .FRASE {
+    flex-basis: calc(40% - 2rem);
+}
+
+
+/** FRASE**/
+
+.FRASE {
+    background: brown;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.FRASE p {
+    text-align: right;
+}
+
+.FRASE blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
